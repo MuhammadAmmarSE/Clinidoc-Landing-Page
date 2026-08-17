@@ -4,15 +4,15 @@ This is the running ground-truth for the landing page project. Each milestone is
 milestone-by-milestone in conversation; this file tracks what's locked, what's defined but
 not yet built, and where the artifact lives. Update it as milestones land.
 
-Status legend: 🟢 Locked & built · 🟡 Defined, not yet built · 🔵 Conditional (build only if criteria met) · ⏳ Pending a decision
+Status legend: 🟢 Locked & built · 🟡 Defined, not yet built · 🔵 Conditional (build only if criteria met)
 
 | # | Milestone | Status | Artifact |
 |---|---|---|---|
-| 00 | Product & Brand Foundation | 🟢 Revised & re-locked | [Link](https://claude.ai/code/artifact/a7265915-a774-4b78-9098-2c368d37585d) — behavioral health positioning + central narrative |
-| 01 | CliniDoc Design Language | 🟢 | [Link](https://claude.ai/code/artifact/50a9851f-4114-4495-b27c-bf81207d1a89) |
-| 02 | Landing Page Architecture | 🟢 | [Link](https://claude.ai/code/artifact/eaf3a73e-8b4c-4e55-a2cd-1f7baf6bb704) |
-| 03 | Hero Experience | 🟢 | [Link](https://claude.ai/code/artifact/e4a253da-e8ea-4893-ac6b-e878e09e3b80) |
-| 04 | Hero Product Visualization | 🟢 | [Link](https://claude.ai/code/artifact/d5bf25d7-6e31-4fba-b0d6-b41d51701dbe) |
+| 00 | Product & Brand Foundation | 🟢 Re-locked (3rd pass) | [Link](https://claude.ai/code/artifact/a7265915-a774-4b78-9098-2c368d37585d) |
+| 01 | CliniDoc Design System | 🟢 Re-locked (2nd pass) | [Link](https://claude.ai/code/artifact/50a9851f-4114-4495-b27c-bf81207d1a89) |
+| 02 | Homepage Blueprint | 🟢 Re-locked (2nd pass) | [Link](https://claude.ai/code/artifact/eaf3a73e-8b4c-4e55-a2cd-1f7baf6bb704) |
+| 03 | Hero | 🟢 Re-locked — absorbs old M04 | [Link](https://claude.ai/code/artifact/e4a253da-e8ea-4893-ac6b-e878e09e3b80) |
+| ~~04~~ | ~~Hero Product Visualization~~ | Merged into 03 | [old link, superseded](https://claude.ai/code/artifact/d5bf25d7-6e31-4fba-b0d6-b41d51701dbe) |
 | 05 | Clinical Journey | 🟢 | [Link](https://claude.ai/code/artifact/956c7470-3a8d-4b97-b615-a301e39ba020) |
 | 06 | Everything Connected | 🟢 | [Link](https://claude.ai/code/artifact/f04e052f-1078-4a1f-9a54-f377003a0eb5) |
 | 07 | Care Team Experience | 🟢 | same as above |
@@ -21,10 +21,10 @@ Status legend: 🟢 Locked & built · 🟡 Defined, not yet built · 🔵 Condit
 | 10 | Clinical Notes | 🟢 | same as above |
 | 11 | Appointments & Scheduling | 🟡 | — |
 | 12 | Referral Journey | 🟡 | — |
-| 13 | Security & Trust | 🟡 | HIPAA/SOC 2 reconfirmed in M00 revision — unblocked |
-| 14 | "One Patient. One Story." | 🟡 | Elevated to central brand narrative in M00 revision — already expressed across M05–10, dedicated section still to build |
+| 13 | Security & Trust | 🟡 | Feature-level language only — see Resolved decisions |
+| 14 | "One Patient. One Story." | 🟡 | Core narrative already locked in M00; dedicated section still to build |
 | 15 | Interactive Product Showcase (Clinician / Admin / Patient toggle) | 🟡 | — |
-| 16 | AI / Intelligence Layer | 🔵 | Only if real AI capability exists — otherwise "coming intelligence capabilities" framing |
+| 16 | AI / Intelligence Layer | 🔵 | Only if real AI capability exists — otherwise "coming intelligence capabilities" |
 | 17 | Integrations / Ecosystem | 🔵 | Only confirmed integrations |
 | 18 | Proof & Trust | 🔵 | Only real evidence — no fabricated stats/testimonials/logos |
 | 19 | Conversion Experience (multi-path CTA) | 🟡 | — |
@@ -32,28 +32,50 @@ Status legend: 🟢 Locked & built · 🟡 Defined, not yet built · 🔵 Condit
 | 21 | Production Hardening (a11y, perf, SEO, security, monitoring) | 🟡 | — |
 | 22 | Post-Launch Intelligence (analytics plan) | 🟡 | — |
 
-## Resolved decisions
+## Resolved decisions — current as of the 3rd M00 pass
 
-1. **Compliance claims.** Confirmed still current: CliniDoc is HIPAA compliant with a SOC 2
-   program. Milestone 13's caution applies as a general operating principle for *future*
-   claims (exact report type, badge assets, BAA copy — still unconfirmed), not a retraction
-   of this one.
+Milestones 00–03 have now been revised twice. Both times reversed a prior decision.
+**These are the current, standing answers** — earlier answers in the conversation history
+on these two points are superseded.
 
-2. **Behavioral health vertical.** Confirmed and adopted formally — "The Clinical Intelligence
-   Platform for Behavioral Health" (the real logo's own tagline) is now the category
-   positioning across the foundation. Reframes terminology, examples, and problem framing
-   for all downstream milestones.
+1. **Compliance claims — feature-level only.** Do not state "HIPAA compliant," "SOC 2
+   certified," or any regulatory claim without formal, explicit approval. Describe only
+   implemented features: 2FA, session control, audit log, RBAC, account lockout. (An
+   earlier pass had confirmed HIPAA/SOC 2 directly — that confirmation no longer stands.)
 
-## Open items (not yet decided)
+2. **Positioning — broad, not behavioral-health-exclusive.** CliniDoc is positioned as a
+   broad connected clinical care platform, differentiated from clindoc.ai's narrow AI-scribe
+   focus by breadth (referrals, scheduling, assessments, records, medications, documents,
+   messaging, security, RBAC). The real logo's "Behavioral Health" tagline is not the
+   category claim — kept only as illustrative proof-point flavor (severity/frequency/
+   duration/distress scoring, episode tracking) where it's already accurate. (An earlier
+   pass had adopted behavioral health as the explicit vertical — superseded.)
 
-- Milestone 03's hero headline ("Clinical care, connected.") predates the behavioral-health
-  confirmation — worth revisiting when hero work resumes.
+3. **Three-phrase brand system**, each with a distinct job:
+   - Eyebrow: "Clinical care, connected."
+   - Primary headline: "One connected platform for the complete patient journey."
+   - Core narrative: "One patient. One connected story."
+
+4. **CTAs**: "Request a Demo" (primary) / "Explore CliniDoc" (secondary) — replaces
+   earlier "Book a Demo" / "See How It Works" wording.
+
+5. **Never call CliniDoc an EHR** unless explicitly approved by product/business.
+
+## Open items
+
+- Milestones 05–10 (Clinical Journey, Everything Connected, Care Team/Patient Experience,
+  Assessment Intelligence, Clinical Notes) predate this positioning reversal and still lean
+  on the earlier, broader-but-not-behavioral-health-exclusive framing from before the second
+  M00 pass — worth a consistency pass once 11+ resumes, not fixed retroactively.
 - "Patient" vs. "client" terminology — system schema says patient; some behavioral-health
   practices prefer client. Flagged, not decided.
+- Mobile-specific hero layout and scroll-linked transition into §04 are specified in the
+  Milestone 03 brief but not built into the current mockup.
 
 ## Brand assets
 
 Real, vectorized CliniDoc logo (icon + lockups, color/mono/white variants) at
 `assets/brand/`. Source reference image at `assets/brand/source-reference.jpg`.
 Confirmed brand colors: Navy `#2C3D4F` · Blue `#6B9AD1` · Teal `#53B9B2` (sampled directly
-from the logo file, see Milestone 01).
+from the logo file, see Milestone 01) — real, not placeholder tokens, regardless of how
+Milestone 01's brief characterizes color-system status.
