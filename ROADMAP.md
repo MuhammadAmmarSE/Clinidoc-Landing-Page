@@ -18,10 +18,11 @@ Status legend: 🟢 Locked & built · 🟡 Defined, not yet built · 🔵 Condit
 | 07 | Assessment Intelligence | 🟢 | [Link](https://claude.ai/code/artifact/4f964315-8277-4748-98e2-5072826069b3) — interactive Question→Condition→Threshold→Specifire→Characterization→Note chain |
 | 08 | Referrals, Scheduling & First Contact | 🟢 | [Link](https://claude.ai/code/artifact/c8d6b3e6-d81b-4b6b-8fa2-aaaf3a2b9e3d) — interactive Referral→Review→Patient→Schedule→Appointment, real date/time picker |
 | 09 | Clinical Record & Documentation | 🟢 | [Link](https://claude.ai/code/artifact/14af0df4-6047-469e-a327-01de610213d0) — fixed patient header, 7-view record (Overview/Timeline/Assessments/Medications/Documents/Appointments/Messages), accordion Timeline, convergence hub diagram |
-| 10 | Security, Privacy & Controlled Access Experience | 🟡 next | Coming — Identity → Authentication → 2FA → Trusted Device → Role → Permission → Session → Audit → Controlled Change |
+| 10 | Security, Privacy & Controlled Access Experience | 🟢 | [Link](https://claude.ai/code/artifact/eee49fa9-308d-4004-8fc6-40522b08d05f) — interactive sign-in→2FA→trusted device→session→audit walkthrough, functional session revoke / device remove, Care Team + Patient perspectives |
+| 11 | Clinical Programs & Configurable Care Pathways | 🟡 next | Coming — Program → Assessment Blocks → Questions → Conditions → Flow → Characterizations → Clinical Documentation |
 | ~~11~~ | ~~Appointments & Scheduling~~ | Superseded by new M08 | — |
 | ~~12~~ | ~~Referral Journey~~ | Superseded by new M08 | — |
-| 13 | Security & Trust | 🟡 | Feature-level language only — see Resolved decisions |
+| ~~13~~ | ~~Security & Trust~~ | Superseded by new M10 | — |
 | 14 | "One Patient. One Story." | 🟡 | Core narrative already locked in M00; dedicated section still to build |
 | 15 | Interactive Product Showcase (Clinician / Admin / Patient toggle) | 🟡 | — |
 | 16 | AI / Intelligence Layer | 🔵 | Only if real AI capability exists — otherwise "coming intelligence capabilities" |
@@ -38,12 +39,19 @@ Milestones 00–03 have now been revised twice. Both times reversed a prior deci
 **These are the current, standing answers** — earlier answers in the conversation history
 on these two points are superseded.
 
-1. **Compliance claims — HIPAA and SOC 2 are implemented, confirmed directly.** Safe to
-   state "HIPAA compliant" and reference the SOC 2 program as fact, not just as underlying
-   security features. (This reverses the previous pass's walk-back to feature-level-only
-   language — third and current answer on this point; treat as settled unless told
-   otherwise again.) Still unconfirmed and still not to be invented: exact SOC 2 report
-   type/date, badge assets, BAA process copy.
+1. **Compliance claims — REVERSED AGAIN by Milestone 10 (4th pass). Currently: no HIPAA /
+   SOC 2 / ISO / zero-trust / military-grade claims anywhere**, "unless separately verified
+   and approved." M10's brief states this explicitly and repeatedly (hero copy rules +
+   §37 Compliance Claims), directly contradicting the 3rd-pass answer above, which had
+   said the opposite — safe to state HIPAA/SOC 2 as fact. I did not silently pick a side:
+   M10's artifact was built with zero compliance claims per its own explicit instruction,
+   and this reversal is flagged in that artifact's documentation section too. **This is now
+   the two documents disagreeing with each other** — M00 (3rd pass, still live at its own
+   URL) says compliance is confirmed fact; M10 says the opposite. Needs a decision from you
+   on which stands, and if HIPAA/SOC2 language should stand, M00 should be reverted to
+   match. Until resolved, treat "no compliance claims" (M10's version) as the safer default
+   for any further milestone. Still unconfirmed and still not to be invented: exact SOC 2
+   report type/date, badge assets, BAA process copy.
 
 2. **Positioning — broad, not behavioral-health-exclusive.** CliniDoc is positioned as a
    broad connected clinical care platform, differentiated from clindoc.ai's narrow AI-scribe
@@ -78,13 +86,17 @@ content from the earlier five-section batch. What's left of that batch:
 - **Milestone 09 (Clinical Record & Documentation)** is now built — no old-numbered
   collision for this one; it's new ground (old batch never had a dedicated record/timeline
   section).
-- Watch for a likely collision next: **Milestone 10 (Security, Privacy & Controlled Access
-  Experience)**, previewed as next up, overlaps with row **13 (Security & Trust)** below,
-  which is still only feature-level language. When M10 lands, expect it to supersede row 13
-  the same way 04-08 resolved earlier collisions.
+- **Milestone 10 (Security, Privacy & Controlled Access Experience)** is now built and
+  supersedes old row 13 (Security & Trust), as predicted — resolved.
+- New **Milestone 11 (Clinical Programs & Configurable Care Pathways)**, previewed as next,
+  reuses the number "11" already struck through above for the old "Appointments &
+  Scheduling" batch item. Same resolution pattern as before: old 11 stays struck through
+  with its superseded-by note, new 11 is a distinct row directly above it.
 
 ## Open items
 
+- **HIPAA/SOC 2 claims — M00 and M10 now disagree** (see Resolved decisions §1). Needs a
+  call from you on which stands; M00 hasn't been reverted pending that answer.
 - "Patient" vs. "client" terminology — system schema says patient; some behavioral-health
   practices prefer client. Flagged, not decided.
 - Mobile-specific hero layout and scroll-linked transition into §04 are specified in the
