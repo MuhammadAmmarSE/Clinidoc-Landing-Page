@@ -4,6 +4,23 @@ This is the running ground-truth for the landing page project. Each milestone is
 milestone-by-milestone in conversation; this file tracks what's locked, what's defined but
 not yet built, and where the artifact lives. Update it as milestones land.
 
+## Production build
+
+The design milestones below (00–20) were built as standalone Claude Artifact prototypes —
+useful for iterating on the product narrative and design system, but each one a disconnected
+HTML file, not a real site. **That's no longer the current deliverable.** This repository now
+contains an actual production codebase — Next.js (App Router) + TypeScript + Tailwind CSS +
+Framer Motion — implementing the design system and homepage those milestones established.
+See `README.md` for the stack, project structure, and how to run it (`npm install && npm run
+dev`). The build was verified end-to-end: `npm run build`/`lint`/`typecheck` all pass, and the
+production server was smoke-tested in a real browser (light/dark/mobile, every interactive
+control, and the generated OG image) before this landed.
+
+The milestone artifacts below remain valuable as the **design record** — they're where the
+product narrative, copy, and visual language were worked out — but the Next.js app in `app/`
+and `components/` is the real, shippable thing going forward. New product work should extend
+the Next.js app directly rather than producing another one-off Artifact prototype.
+
 Status legend: 🟢 Locked & built · 🟡 Defined, not yet built · 🔵 Conditional (build only if criteria met)
 
 | # | Milestone | Status | Artifact |
