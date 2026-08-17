@@ -8,7 +8,7 @@ Status legend: 🟢 Locked & built · 🟡 Defined, not yet built · 🔵 Condit
 
 | # | Milestone | Status | Artifact |
 |---|---|---|---|
-| 00 | Product & Brand Foundation | ⏳ Being revised | [v1](https://claude.ai/code/artifact/a7265915-a774-4b78-9098-2c368d37585d) — superseded by a stronger revision in progress |
+| 00 | Product & Brand Foundation | 🟢 Revised & re-locked | [Link](https://claude.ai/code/artifact/a7265915-a774-4b78-9098-2c368d37585d) — behavioral health positioning + central narrative |
 | 01 | CliniDoc Design Language | 🟢 | [Link](https://claude.ai/code/artifact/50a9851f-4114-4495-b27c-bf81207d1a89) |
 | 02 | Landing Page Architecture | 🟢 | [Link](https://claude.ai/code/artifact/eaf3a73e-8b4c-4e55-a2cd-1f7baf6bb704) |
 | 03 | Hero Experience | 🟢 | [Link](https://claude.ai/code/artifact/e4a253da-e8ea-4893-ac6b-e878e09e3b80) |
@@ -21,8 +21,8 @@ Status legend: 🟢 Locked & built · 🟡 Defined, not yet built · 🔵 Condit
 | 10 | Clinical Notes | 🟢 | same as above |
 | 11 | Appointments & Scheduling | 🟡 | — |
 | 12 | Referral Journey | 🟡 | — |
-| 13 | Security & Trust | ⏳ | Blocked on confirming exact compliance claims — see Open Decisions |
-| 14 | "One Patient. One Story." | 🟡 | Elevated to central brand narrative as of M00 revision |
+| 13 | Security & Trust | 🟡 | HIPAA/SOC 2 reconfirmed in M00 revision — unblocked |
+| 14 | "One Patient. One Story." | 🟡 | Elevated to central brand narrative in M00 revision — already expressed across M05–10, dedicated section still to build |
 | 15 | Interactive Product Showcase (Clinician / Admin / Patient toggle) | 🟡 | — |
 | 16 | AI / Intelligence Layer | 🔵 | Only if real AI capability exists — otherwise "coming intelligence capabilities" framing |
 | 17 | Integrations / Ecosystem | 🔵 | Only confirmed integrations |
@@ -32,20 +32,24 @@ Status legend: 🟢 Locked & built · 🟡 Defined, not yet built · 🔵 Condit
 | 21 | Production Hardening (a11y, perf, SEO, security, monitoring) | 🟡 | — |
 | 22 | Post-Launch Intelligence (analytics plan) | 🟡 | — |
 
-## Open decisions (blocking downstream milestones)
+## Resolved decisions
 
-1. **Compliance claims — contradiction to resolve.** In Milestone 00's original pass, you
-   confirmed "HIPAA compliant, SOC 2" when directly asked. Milestone 13's brief now says
-   "do not automatically write HIPAA compliant unless formally established." These can't
-   both stand as written — need to know if the earlier confirmation still holds, or if it
-   needs walking back to feature-level language only. Blocks §03/§13 of the page architecture
-   and the M00 trust-language section.
+1. **Compliance claims.** Confirmed still current: CliniDoc is HIPAA compliant with a SOC 2
+   program. Milestone 13's caution applies as a general operating principle for *future*
+   claims (exact report type, badge assets, BAA copy — still unconfirmed), not a retraction
+   of this one.
 
-2. **Behavioral health vertical.** The real logo you shared carries the tagline "The Clinical
-   Intelligence Platform for Behavioral Health" — every foundation and design-language
-   artifact so far has been positioned as generic "clinical care," not behavioral-health-
-   specific. This is a significant enough scope question to confirm explicitly before it
-   propagates through the M00 revision and everything downstream.
+2. **Behavioral health vertical.** Confirmed and adopted formally — "The Clinical Intelligence
+   Platform for Behavioral Health" (the real logo's own tagline) is now the category
+   positioning across the foundation. Reframes terminology, examples, and problem framing
+   for all downstream milestones.
+
+## Open items (not yet decided)
+
+- Milestone 03's hero headline ("Clinical care, connected.") predates the behavioral-health
+  confirmation — worth revisiting when hero work resumes.
+- "Patient" vs. "client" terminology — system schema says patient; some behavioral-health
+  practices prefer client. Flagged, not decided.
 
 ## Brand assets
 
