@@ -14,8 +14,9 @@ Status legend: 🟢 Locked & built · 🟡 Defined, not yet built · 🔵 Condit
 | 03 | Hero | 🟢 Re-locked — absorbs old M04 | [Link](https://claude.ai/code/artifact/e4a253da-e8ea-4893-ac6b-e878e09e3b80) |
 | 04 | Connected Patient Journey Experience | 🟢 | [Link](https://claude.ai/code/artifact/0b638f28-3076-4809-b2c6-e16e898ae4b4) — interactive 9-stage journey, supersedes old M05 |
 | ~~05~~ | ~~Clinical Journey~~ | Superseded by new M04 (fuller, 9-stage, interactive) | [old link](https://claude.ai/code/artifact/956c7470-3a8d-4b97-b615-a301e39ba020) |
+| 05 | Care Team Experience | 🟢 | [Link](https://claude.ai/code/artifact/16a06c63-8006-4d56-9d9d-041f2ac27e57) — interactive workspace, supersedes old M07 |
 | 06 | Everything Connected | 🟢 | [Link](https://claude.ai/code/artifact/f04e052f-1078-4a1f-9a54-f377003a0eb5) |
-| 07 | Care Team Experience | 🟢 | same as above |
+| ~~07~~ | ~~Care Team Experience~~ | Superseded by new M05 (full interactive workspace) | same batch link as M06 |
 | 08 | Patient Experience | 🟢 | same as above |
 | 09 | Assessment Intelligence | 🟢 | same as above |
 | 10 | Clinical Notes | 🟢 | same as above |
