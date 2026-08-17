@@ -19,10 +19,18 @@ Status legend: 🟢 Locked & built · 🟡 Defined, not yet built · 🔵 Condit
 | 08 | Referrals, Scheduling & First Contact | 🟢 | [Link](https://claude.ai/code/artifact/c8d6b3e6-d81b-4b6b-8fa2-aaaf3a2b9e3d) — interactive Referral→Review→Patient→Schedule→Appointment, real date/time picker |
 | 09 | Clinical Record & Documentation | 🟢 | [Link](https://claude.ai/code/artifact/14af0df4-6047-469e-a327-01de610213d0) — fixed patient header, 7-view record (Overview/Timeline/Assessments/Medications/Documents/Appointments/Messages), accordion Timeline, convergence hub diagram |
 | 10 | Security, Privacy & Controlled Access Experience | 🟢 | [Link](https://claude.ai/code/artifact/eee49fa9-308d-4004-8fc6-40522b08d05f) — interactive sign-in→2FA→trusted device→session→audit walkthrough, functional session revoke / device remove, Care Team + Patient perspectives |
-| 11 | Clinical Programs & Configurable Care Pathways | 🟡 next | Coming — Program → Assessment Blocks → Questions → Conditions → Flow → Characterizations → Clinical Documentation |
+| 11 | Configurable Clinical Programs | 🟢 | [Link](https://claude.ai/code/artifact/f2ef0ea6-9ccd-48f4-b2dc-9fb01785fd37) — interactive Builder/Runtime toggle, real Questions/Conditions/Flow/Characterizations tabs, Specifires + Threshold + dynamic note callbacks to M07 |
 | ~~11~~ | ~~Appointments & Scheduling~~ | Superseded by new M08 | — |
 | ~~12~~ | ~~Referral Journey~~ | Superseded by new M08 | — |
 | ~~13~~ | ~~Security & Trust~~ | Superseded by new M10 | — |
+| 12 | Connected Care & Patient Communication | 🟡 defined | Not yet built — Patient Activity feed + Messages, related-context drawer, Patient/Staff activity toggle. (Sent twice: first previewed as "Communication & Care-Team Collaboration," then delivered in full under this title — same milestone, using the fuller spec.) |
+| 13 | Care Coordination & Referral Network | 🟡 defined | Not yet built — Referral Network visualization, coordination board (New→Review→Scheduled→Care), external provider, connects to M08/M09/M10 |
+| 14 | Patient Portal Experience | 🟡 defined | Not yet built — full portal shell (Home/Appointments/Assessments/Records/Medications/Documents/Messages/Security), "What's Next?" card, empty/loading/error states |
+| 15 | Administration, Configuration & Operational Control | 🟡 defined | Not yet built — Users/Roles/Permission matrix, Provider + Schedule Template → Default Schedule → Slots chain, Pending Approvals two-phase review, Calendar |
+| 16 | Clinical Documentation & AI Scribe | 🟡 defined — needs verification | Not yet built — encounter workspace + "AI Scribe" assisted drafting with mandatory "AI-assisted, clinician-led" labeling. **I can't independently confirm an AI Scribe feature from the CLAUDE.md docs in this session** — see Open items. |
+| 17 | Clinical Intelligence & Insights | 🟡 defined | Not yet built — characterization trend charts, assessment/visit history, timeline↔trends toggle, explicitly non-predictive framing |
+| 18 | Platform Architecture & Infrastructure | 🟡 defined | Not yet built — layered architecture diagram, request lifecycle, tech stack reveal (matches backend CLAUDE.md stack exactly) |
+| 19 | Trust, Privacy, Security & Enterprise Readiness | 🟡 defined | Not yet built — reprises M10's security controls as an enterprise-credibility section; explicitly no compliance-badge claims (consistent with M10, not M00's 3rd pass — see Open items) |
 | 14 | "One Patient. One Story." | 🟡 | Core narrative already locked in M00; dedicated section still to build |
 | 15 | Interactive Product Showcase (Clinician / Admin / Patient toggle) | 🟡 | — |
 | 16 | AI / Intelligence Layer | 🔵 | Only if real AI capability exists — otherwise "coming intelligence capabilities" |
@@ -88,15 +96,36 @@ content from the earlier five-section batch. What's left of that batch:
   section).
 - **Milestone 10 (Security, Privacy & Controlled Access Experience)** is now built and
   supersedes old row 13 (Security & Trust), as predicted — resolved.
-- New **Milestone 11 (Clinical Programs & Configurable Care Pathways)**, previewed as next,
-  reuses the number "11" already struck through above for the old "Appointments &
-  Scheduling" batch item. Same resolution pattern as before: old 11 stays struck through
-  with its superseded-by note, new 11 is a distinct row directly above it.
+- New **Milestone 11 (Configurable Clinical Programs)** is now built, reusing the number
+  "11" already struck through above for the old "Appointments & Scheduling" batch item —
+  resolved the same way as before.
+- **Milestones 12–19 arrived in one large batch** (all sent in a single message, several
+  with a "Worked for Ns" marker suggesting they were drafted in another session and pasted
+  in). Logged all eight as 🟡 defined-not-built rows above, in the order sent. Building
+  continues one at a time per the established cadence — M11 first (built this pass), then
+  12 onward on request.
+- The batch's intro said "Below are Milestones 18, 19 **and 20**, completing the roadmap,"
+  but only 18 and 19 were actually included in the text — no M20 spec arrived. Flagged in
+  Open items; M20 needs a follow-up spec before it can be logged or built.
 
 ## Open items
 
 - **HIPAA/SOC 2 claims — M00 and M10 now disagree** (see Resolved decisions §1). Needs a
-  call from you on which stands; M00 hasn't been reverted pending that answer.
+  call from you on which stands; M00 hasn't been reverted pending that answer. M19's brief
+  (defined, not yet built) restates M10's "no compliance badges" position, so the disputed
+  side is now 1-for-1 (M00) vs 2-for (M10, M19) — still unresolved either way without your
+  explicit call.
+- **Milestone 16's "AI Scribe" — can't verify from the docs I have.** The M16 brief cites a
+  dedicated AI Scribe layer with "action enums" and a "mock interpreter" in the client
+  source. Neither the backend nor the Program Creation `CLAUDE.md` in this session mentions
+  any AI capability, Scribe or otherwise — `PatientNotes`, characterization trend
+  components, and assessment/visit history are the only pieces I can confirm. Before
+  building M16, I'd want to confirm the AI Scribe feature actually exists in
+  `clinidoc-client` (not currently an attached repo in this session) — building an AI
+  feature that isn't real would violate the standing "never invent AI capabilities" rule
+  from Milestone 00.
+- **No Milestone 20 spec received** despite the batch's intro promising "18, 19 and 20."
+  Nothing to log yet — flagging so it isn't mistaken for an intentional gap.
 - "Patient" vs. "client" terminology — system schema says patient; some behavioral-health
   practices prefer client. Flagged, not decided.
 - Mobile-specific hero layout and scroll-linked transition into §04 are specified in the
