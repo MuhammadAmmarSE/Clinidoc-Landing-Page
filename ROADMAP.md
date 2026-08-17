@@ -25,12 +25,12 @@ Status legend: 🟢 Locked & built · 🟡 Defined, not yet built · 🔵 Condit
 | ~~13~~ | ~~Security & Trust~~ | Superseded by new M10 | — |
 | 12 | Connected Care & Patient Communication | 🟢 | [Link](https://claude.ai/code/artifact/99bbdf6d-169f-43ad-81dd-76ed6e37d695) — activity feed doubling as message-detail context, Patient/Staff perspective toggle with working type filters, functional "mark as read" and click-triggered connection animation |
 | 13 | Care Coordination & Referral Network | 🟢 | [Link](https://claude.ai/code/artifact/2b7f5250-446a-4ca5-90ba-7352d180cb98) — coordination board with a single patient card that physically advances New→Review→Scheduled→Active Care, live-updating referral context panel, progressive network-build animation |
-| 14 | Patient Portal Experience | 🟡 defined | Not yet built — full portal shell (Home/Appointments/Assessments/Records/Medications/Documents/Messages/Security), "What's Next?" card, empty/loading/error states |
-| 15 | Administration, Configuration & Operational Control | 🟡 defined | Not yet built — Users/Roles/Permission matrix, Provider + Schedule Template → Default Schedule → Slots chain, Pending Approvals two-phase review, Calendar |
-| 16 | Clinical Documentation & AI Scribe | 🟡 defined — needs verification | Not yet built — encounter workspace + "AI Scribe" assisted drafting with mandatory "AI-assisted, clinician-led" labeling. **I can't independently confirm an AI Scribe feature from the CLAUDE.md docs in this session** — see Open items. |
-| 17 | Clinical Intelligence & Insights | 🟡 defined | Not yet built — characterization trend charts, assessment/visit history, timeline↔trends toggle, explicitly non-predictive framing |
-| 18 | Platform Architecture & Infrastructure | 🟡 defined | Not yet built — layered architecture diagram, request lifecycle, tech stack reveal (matches backend CLAUDE.md stack exactly) |
-| 19 | Trust, Privacy, Security & Enterprise Readiness | 🟡 defined | Not yet built — reprises M10's security controls as an enterprise-credibility section; explicitly no compliance-badge claims (consistent with M10, not M00's 3rd pass — see Open items) |
+| 14 | Patient Portal Experience | 🟢 | [Link](https://claude.ai/code/artifact/587a9f70-e96c-480d-be12-99802292f852) — full 8-view portal shell, functional booking/assessment stepper/records expand/messages/empty-state toggle |
+| 15 | Administration, Configuration & Operational Control | 🟢 | [Link](https://claude.ai/code/artifact/c9ca3b03-3b92-4181-9995-51710718d331) — Users/Roles with real permission matrix, Schedule Template→Slots chain, functional 4-stage Pending Approvals workflow |
+| 16 | Clinical Documentation & AI Scribe | 🟢 — flagged, needs verification | [Link](https://claude.ai/code/artifact/fc807429-744a-4b80-9d2a-80e92e2f4636) — encounter workspace, AI Scribe draft/review/accept flow, all AI content labeled "AI-assisted — review required." **Built anyway per your "continue" instruction, but I still can't confirm this feature exists in `clinidoc-client`** — see Open items; recommend pulling this section if it turns out not to be real. |
+| 17 | Clinical Intelligence & Insights | 🟢 | [Link](https://claude.ai/code/artifact/1190492d-12c9-47ff-8aa3-285fb6c3e940) — real SVG characterization trend chart, Timeline/Trends/Compare toggle, neutral non-predictive change language |
+| 18 | Platform Architecture & Infrastructure | 🟢 | [Link](https://claude.ai/code/artifact/e725cb4a-20a9-4b1e-a5db-a6bb2ca7f591) — layered stack, Architecture Explorer, click-triggered request lifecycle, tech stack cards matching the real backend exactly |
+| 19 | Trust, Privacy, Security & Enterprise Readiness | 🟢 | [Link](https://claude.ai/code/artifact/8dfa4b03-a702-465d-a9cc-cc8abc5e6b31) — enterprise-credibility reprise of M10's real controls, concrete trust statements, no compliance badges (consistent with M10, not M00's 3rd pass — see Open items) |
 | 14 | "One Patient. One Story." | 🟡 | Core narrative already locked in M00; dedicated section still to build |
 | 15 | Interactive Product Showcase (Clinician / Admin / Patient toggle) | 🟡 | — |
 | 16 | AI / Intelligence Layer | 🔵 | Only if real AI capability exists — otherwise "coming intelligence capabilities" |
@@ -101,9 +101,9 @@ content from the earlier five-section batch. What's left of that batch:
   resolved the same way as before.
 - **Milestones 12–19 arrived in one large batch** (all sent in a single message, several
   with a "Worked for Ns" marker suggesting they were drafted in another session and pasted
-  in). Logged all eight as 🟡 defined-not-built rows above, in the order sent. Building
-  continues one at a time per the established cadence — M11 first (built this pass), then
-  12 onward on request.
+  in). All eight are now built (12 and 13 built individually, 14–19 built together in one
+  pass per your "continue till M19" instruction). Milestone 20 (final assembly) is next,
+  as agreed before this batch started.
 - The batch's intro said "Below are Milestones 18, 19 **and 20**, completing the roadmap,"
   but only 18 and 19 were actually included in the text — the M20 spec (Final Landing Page
   Assembly, Conversion & Launch) arrived separately afterward.
