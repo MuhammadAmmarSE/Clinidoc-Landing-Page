@@ -17,7 +17,8 @@ Status legend: 🟢 Locked & built · 🟡 Defined, not yet built · 🔵 Condit
 | 06 | Patient Experience | 🟢 | [Link](https://claude.ai/code/artifact/359c7d5a-dabf-4831-b03a-01032c4508c1) — calm patient portal |
 | 07 | Assessment Intelligence | 🟢 | [Link](https://claude.ai/code/artifact/4f964315-8277-4748-98e2-5072826069b3) — interactive Question→Condition→Threshold→Specifire→Characterization→Note chain |
 | 08 | Referrals, Scheduling & First Contact | 🟢 | [Link](https://claude.ai/code/artifact/c8d6b3e6-d81b-4b6b-8fa2-aaaf3a2b9e3d) — interactive Referral→Review→Patient→Schedule→Appointment, real date/time picker |
-| 09 | Clinical Record & Documentation | 🟡 next | Coming — Patient → Timeline → Assessments → Clinical Notes → Medications → Documents → Appointments → Care Team |
+| 09 | Clinical Record & Documentation | 🟢 | [Link](https://claude.ai/code/artifact/14af0df4-6047-469e-a327-01de610213d0) — fixed patient header, 7-view record (Overview/Timeline/Assessments/Medications/Documents/Appointments/Messages), accordion Timeline, convergence hub diagram |
+| 10 | Security, Privacy & Controlled Access Experience | 🟡 next | Coming — Identity → Authentication → 2FA → Trusted Device → Role → Permission → Session → Audit → Controlled Change |
 | ~~11~~ | ~~Appointments & Scheduling~~ | Superseded by new M08 | — |
 | ~~12~~ | ~~Referral Journey~~ | Superseded by new M08 | — |
 | 13 | Security & Trust | 🟡 | Feature-level language only — see Resolved decisions |
@@ -72,9 +73,15 @@ content from the earlier five-section batch. What's left of that batch:
   no new-numbered replacement yet, carried over as-is.
 - **Clinical Notes** — superseded by Milestone 07's dynamic note + @ variable demo, which
   covers the same ground more fully (real interaction, not a looping animation).
-- Old milestones **11 (Appointments & Scheduling)** and **12 (Referral Journey)** are very
-  likely to be superseded by **Milestone 08 (Referrals, Scheduling & First Contact)**,
-  next up per your own roadmap — watch for that collision the same way 05-07 resolved it.
+- Old milestones **11 (Appointments & Scheduling)** and **12 (Referral Journey)** were
+  superseded by **Milestone 08 (Referrals, Scheduling & First Contact)** — resolved.
+- **Milestone 09 (Clinical Record & Documentation)** is now built — no old-numbered
+  collision for this one; it's new ground (old batch never had a dedicated record/timeline
+  section).
+- Watch for a likely collision next: **Milestone 10 (Security, Privacy & Controlled Access
+  Experience)**, previewed as next up, overlaps with row **13 (Security & Trust)** below,
+  which is still only feature-level language. When M10 lands, expect it to supersede row 13
+  the same way 04-08 resolved earlier collisions.
 
 ## Open items
 
