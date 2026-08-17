@@ -23,7 +23,7 @@ Status legend: 🟢 Locked & built · 🟡 Defined, not yet built · 🔵 Condit
 | ~~11~~ | ~~Appointments & Scheduling~~ | Superseded by new M08 | — |
 | ~~12~~ | ~~Referral Journey~~ | Superseded by new M08 | — |
 | ~~13~~ | ~~Security & Trust~~ | Superseded by new M10 | — |
-| 12 | Connected Care & Patient Communication | 🟡 defined | Not yet built — Patient Activity feed + Messages, related-context drawer, Patient/Staff activity toggle. (Sent twice: first previewed as "Communication & Care-Team Collaboration," then delivered in full under this title — same milestone, using the fuller spec.) |
+| 12 | Connected Care & Patient Communication | 🟢 | [Link](https://claude.ai/code/artifact/99bbdf6d-169f-43ad-81dd-76ed6e37d695) — activity feed doubling as message-detail context, Patient/Staff perspective toggle with working type filters, functional "mark as read" and click-triggered connection animation |
 | 13 | Care Coordination & Referral Network | 🟡 defined | Not yet built — Referral Network visualization, coordination board (New→Review→Scheduled→Care), external provider, connects to M08/M09/M10 |
 | 14 | Patient Portal Experience | 🟡 defined | Not yet built — full portal shell (Home/Appointments/Assessments/Records/Medications/Documents/Messages/Security), "What's Next?" card, empty/loading/error states |
 | 15 | Administration, Configuration & Operational Control | 🟡 defined | Not yet built — Users/Roles/Permission matrix, Provider + Schedule Template → Default Schedule → Slots chain, Pending Approvals two-phase review, Calendar |
@@ -105,8 +105,14 @@ content from the earlier five-section batch. What's left of that batch:
   continues one at a time per the established cadence — M11 first (built this pass), then
   12 onward on request.
 - The batch's intro said "Below are Milestones 18, 19 **and 20**, completing the roadmap,"
-  but only 18 and 19 were actually included in the text — no M20 spec arrived. Flagged in
-  Open items; M20 needs a follow-up spec before it can be logged or built.
+  but only 18 and 19 were actually included in the text — the M20 spec (Final Landing Page
+  Assembly, Conversion & Launch) arrived separately afterward.
+- **M20 explicitly reuses M12/M14/M15/M16/M17/M19 content** ("Use Milestone 14," "Use
+  Milestone 16," etc.), none of which were built yet when M20's spec landed. Flagged to
+  you directly rather than assembling with placeholders. **Decision: build M12–19 in full
+  first, M20 last; final assembly is one literal merged single-page artifact**, not a
+  shell linking out to separate section artifacts. That merged file will be large once all
+  19 sections are in — watching for the artifact size ceiling as each section is added.
 
 ## Open items
 
