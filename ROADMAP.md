@@ -24,7 +24,7 @@ Status legend: 🟢 Locked & built · 🟡 Defined, not yet built · 🔵 Condit
 | ~~12~~ | ~~Referral Journey~~ | Superseded by new M08 | — |
 | ~~13~~ | ~~Security & Trust~~ | Superseded by new M10 | — |
 | 12 | Connected Care & Patient Communication | 🟢 | [Link](https://claude.ai/code/artifact/99bbdf6d-169f-43ad-81dd-76ed6e37d695) — activity feed doubling as message-detail context, Patient/Staff perspective toggle with working type filters, functional "mark as read" and click-triggered connection animation |
-| 13 | Care Coordination & Referral Network | 🟡 defined | Not yet built — Referral Network visualization, coordination board (New→Review→Scheduled→Care), external provider, connects to M08/M09/M10 |
+| 13 | Care Coordination & Referral Network | 🟢 | [Link](https://claude.ai/code/artifact/2b7f5250-446a-4ca5-90ba-7352d180cb98) — coordination board with a single patient card that physically advances New→Review→Scheduled→Active Care, live-updating referral context panel, progressive network-build animation |
 | 14 | Patient Portal Experience | 🟡 defined | Not yet built — full portal shell (Home/Appointments/Assessments/Records/Medications/Documents/Messages/Security), "What's Next?" card, empty/loading/error states |
 | 15 | Administration, Configuration & Operational Control | 🟡 defined | Not yet built — Users/Roles/Permission matrix, Provider + Schedule Template → Default Schedule → Slots chain, Pending Approvals two-phase review, Calendar |
 | 16 | Clinical Documentation & AI Scribe | 🟡 defined — needs verification | Not yet built — encounter workspace + "AI Scribe" assisted drafting with mandatory "AI-assisted, clinician-led" labeling. **I can't independently confirm an AI Scribe feature from the CLAUDE.md docs in this session** — see Open items. |
