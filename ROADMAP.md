@@ -16,9 +16,10 @@ Status legend: 🟢 Locked & built · 🟡 Defined, not yet built · 🔵 Condit
 | 05 | Care Team Experience | 🟢 | [Link](https://claude.ai/code/artifact/16a06c63-8006-4d56-9d9d-041f2ac27e57) — interactive workspace |
 | 06 | Patient Experience | 🟢 | [Link](https://claude.ai/code/artifact/359c7d5a-dabf-4831-b03a-01032c4508c1) — calm patient portal |
 | 07 | Assessment Intelligence | 🟢 | [Link](https://claude.ai/code/artifact/4f964315-8277-4748-98e2-5072826069b3) — interactive Question→Condition→Threshold→Specifire→Characterization→Note chain |
-| 08 | Referrals, Scheduling & First Contact | 🟡 next | Coming — Referral → Review → Patient → Scheduling → Provider/Room → Appointment → Care |
-| 11 | Appointments & Scheduling | 🟡 | — |
-| 12 | Referral Journey | 🟡 | — |
+| 08 | Referrals, Scheduling & First Contact | 🟢 | [Link](https://claude.ai/code/artifact/c8d6b3e6-d81b-4b6b-8fa2-aaaf3a2b9e3d) — interactive Referral→Review→Patient→Schedule→Appointment, real date/time picker |
+| 09 | Clinical Record & Documentation | 🟡 next | Coming — Patient → Timeline → Assessments → Clinical Notes → Medications → Documents → Appointments → Care Team |
+| ~~11~~ | ~~Appointments & Scheduling~~ | Superseded by new M08 | — |
+| ~~12~~ | ~~Referral Journey~~ | Superseded by new M08 | — |
 | 13 | Security & Trust | 🟡 | Feature-level language only — see Resolved decisions |
 | 14 | "One Patient. One Story." | 🟡 | Core narrative already locked in M00; dedicated section still to build |
 | 15 | Interactive Product Showcase (Clinician / Admin / Patient toggle) | 🟡 | — |
