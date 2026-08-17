@@ -1,0 +1,163 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Fonts are loaded via next/font/local in app/layout.tsx (self-hosted,
+   zero layout shift, automatic preload) — see the `poppins` / `plexSans` /
+   `plexMono` font objects there. Their `variable` output feeds the
+   `--font-poppins` / `--font-plex-sans` / `--font-plex-mono` custom
+   properties that tailwind.config.ts's fontFamily block reads from. */
+
+/**
+ * Design tokens — the CliniDoc system locked across Milestones 00-20.
+ * Colors were sampled directly from the vectorized brand logo (see assets/brand/).
+ * Three-tier theme resolution: bare :root (light default) -> prefers-color-scheme
+ * (guarded so an explicit light choice always wins) -> [data-theme] (explicit toggle).
+ */
+:root {
+  --color-white: #ffffff;
+  --color-ink: #1b2128;
+  --color-ink-soft: #4b5663;
+  --color-ink-faint: #7c8c9c;
+  --color-paper: #f4f5f6;
+  --color-surface: #ffffff;
+  --color-surface-2: #e6e8ea;
+  --color-surface-3: #eef1f3;
+  --color-line: #ced3da;
+  --color-line-strong: #a5b0bb;
+  --color-navy: #2c3d4f;
+  --color-navy-tint: #e3e8ed;
+  --color-blue: #6b9ad1;
+  --color-blue-600: #407dc4;
+  --color-blue-700: #2e5d94;
+  --color-blue-tint: #e3eaf2;
+  --color-teal: #53b9b2;
+  --color-teal-600: #3f9c96;
+  --color-teal-tint: #e1efee;
+  --color-success: #1b9e6f;
+  --color-success-tint: #e3f7ee;
+  --color-warning: #d97b0a;
+  --color-warning-tint: #fcf1de;
+  --color-danger: #dc4c4c;
+  --color-danger-tint: #fbe7e7;
+  --shadow:
+    0 1px 2px rgba(44, 61, 79, 0.06), 0 8px 24px -12px rgba(44, 61, 79, 0.16);
+  --shadow-lg:
+    0 8px 16px rgba(44, 61, 79, 0.08), 0 32px 64px -20px rgba(44, 61, 79, 0.24);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --color-white: #10151a;
+    --color-ink: #edf1f4;
+    --color-ink-soft: #b7c2cc;
+    --color-ink-faint: #7e8c99;
+    --color-paper: #0d1216;
+    --color-surface: #161d23;
+    --color-surface-2: #1d262d;
+    --color-surface-3: #202a31;
+    --color-line: #2b363f;
+    --color-line-strong: #3c4a54;
+    --color-navy: #a9bbcc;
+    --color-navy-tint: #1c2831;
+    --color-blue: #7fade0;
+    --color-blue-600: #9bc0e8;
+    --color-blue-700: #bad3ee;
+    --color-blue-tint: #1b2a3b;
+    --color-teal: #6bcfc7;
+    --color-teal-600: #8cdad3;
+    --color-teal-tint: #142e2c;
+    --color-success: #3fc793;
+    --color-success-tint: #0f2a20;
+    --color-warning: #eca23f;
+    --color-warning-tint: #2e2110;
+    --color-danger: #f0787a;
+    --color-danger-tint: #331717;
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.35), 0 12px 28px -14px rgba(0, 0, 0, 0.6);
+    --shadow-lg: 0 8px 20px rgba(0, 0, 0, 0.45), 0 40px 80px -24px rgba(0, 0, 0, 0.75);
+  }
+}
+
+:root[data-theme="dark"] {
+  --color-white: #10151a;
+  --color-ink: #edf1f4;
+  --color-ink-soft: #b7c2cc;
+  --color-ink-faint: #7e8c99;
+  --color-paper: #0d1216;
+  --color-surface: #161d23;
+  --color-surface-2: #1d262d;
+  --color-surface-3: #202a31;
+  --color-line: #2b363f;
+  --color-line-strong: #3c4a54;
+  --color-navy: #a9bbcc;
+  --color-navy-tint: #1c2831;
+  --color-blue: #7fade0;
+  --color-blue-600: #9bc0e8;
+  --color-blue-700: #bad3ee;
+  --color-blue-tint: #1b2a3b;
+  --color-teal: #6bcfc7;
+  --color-teal-600: #8cdad3;
+  --color-teal-tint: #142e2c;
+  --color-success: #3fc793;
+  --color-success-tint: #0f2a20;
+  --color-warning: #eca23f;
+  --color-warning-tint: #2e2110;
+  --color-danger: #f0787a;
+  --color-danger-tint: #331717;
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.35), 0 12px 28px -14px rgba(0, 0, 0, 0.6);
+  --shadow-lg: 0 8px 20px rgba(0, 0, 0, 0.45), 0 40px 80px -24px rgba(0, 0, 0, 0.75);
+}
+
+* {
+  border-color: var(--color-line);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+p {
+  max-width: 64ch;
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 999;
+  background: var(--color-navy);
+  color: white;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0 0 8px 0;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.skip-link:focus {
+  left: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
