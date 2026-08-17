@@ -12,8 +12,8 @@ Status legend: 🟢 Locked & built · 🟡 Defined, not yet built · 🔵 Condit
 | 01 | CliniDoc Design System | 🟢 Re-locked (2nd pass) | [Link](https://claude.ai/code/artifact/50a9851f-4114-4495-b27c-bf81207d1a89) |
 | 02 | Homepage Blueprint | 🟢 Re-locked (2nd pass) | [Link](https://claude.ai/code/artifact/eaf3a73e-8b4c-4e55-a2cd-1f7baf6bb704) |
 | 03 | Hero | 🟢 Re-locked — absorbs old M04 | [Link](https://claude.ai/code/artifact/e4a253da-e8ea-4893-ac6b-e878e09e3b80) |
-| ~~04~~ | ~~Hero Product Visualization~~ | Merged into 03 | [old link, superseded](https://claude.ai/code/artifact/d5bf25d7-6e31-4fba-b0d6-b41d51701dbe) |
-| 05 | Clinical Journey | 🟢 | [Link](https://claude.ai/code/artifact/956c7470-3a8d-4b97-b615-a301e39ba020) |
+| 04 | Connected Patient Journey Experience | 🟢 | [Link](https://claude.ai/code/artifact/0b638f28-3076-4809-b2c6-e16e898ae4b4) — interactive 9-stage journey, supersedes old M05 |
+| ~~05~~ | ~~Clinical Journey~~ | Superseded by new M04 (fuller, 9-stage, interactive) | [old link](https://claude.ai/code/artifact/956c7470-3a8d-4b97-b615-a301e39ba020) |
 | 06 | Everything Connected | 🟢 | [Link](https://claude.ai/code/artifact/f04e052f-1078-4a1f-9a54-f377003a0eb5) |
 | 07 | Care Team Experience | 🟢 | same as above |
 | 08 | Patient Experience | 🟢 | same as above |
@@ -38,10 +38,12 @@ Milestones 00–03 have now been revised twice. Both times reversed a prior deci
 **These are the current, standing answers** — earlier answers in the conversation history
 on these two points are superseded.
 
-1. **Compliance claims — feature-level only.** Do not state "HIPAA compliant," "SOC 2
-   certified," or any regulatory claim without formal, explicit approval. Describe only
-   implemented features: 2FA, session control, audit log, RBAC, account lockout. (An
-   earlier pass had confirmed HIPAA/SOC 2 directly — that confirmation no longer stands.)
+1. **Compliance claims — HIPAA and SOC 2 are implemented, confirmed directly.** Safe to
+   state "HIPAA compliant" and reference the SOC 2 program as fact, not just as underlying
+   security features. (This reverses the previous pass's walk-back to feature-level-only
+   language — third and current answer on this point; treat as settled unless told
+   otherwise again.) Still unconfirmed and still not to be invented: exact SOC 2 report
+   type/date, badge assets, BAA process copy.
 
 2. **Positioning — broad, not behavioral-health-exclusive.** CliniDoc is positioned as a
    broad connected clinical care platform, differentiated from clindoc.ai's narrow AI-scribe
