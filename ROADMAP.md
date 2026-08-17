@@ -15,7 +15,8 @@ Status legend: 🟢 Locked & built · 🟡 Defined, not yet built · 🔵 Condit
 | 04 | Connected Patient Journey Experience | 🟢 | [Link](https://claude.ai/code/artifact/0b638f28-3076-4809-b2c6-e16e898ae4b4) — interactive 9-stage journey |
 | 05 | Care Team Experience | 🟢 | [Link](https://claude.ai/code/artifact/16a06c63-8006-4d56-9d9d-041f2ac27e57) — interactive workspace |
 | 06 | Patient Experience | 🟢 | [Link](https://claude.ai/code/artifact/359c7d5a-dabf-4831-b03a-01032c4508c1) — calm patient portal |
-| 07 | Assessment Intelligence | 🟡 next | Coming — Assessment → Questions → Responses → Clinical Logic → Characterization → Clinical Notes |
+| 07 | Assessment Intelligence | 🟢 | [Link](https://claude.ai/code/artifact/4f964315-8277-4748-98e2-5072826069b3) — interactive Question→Condition→Threshold→Specifire→Characterization→Note chain |
+| 08 | Referrals, Scheduling & First Contact | 🟡 next | Coming — Referral → Review → Patient → Scheduling → Provider/Room → Appointment → Care |
 | 11 | Appointments & Scheduling | 🟡 | — |
 | 12 | Referral Journey | 🟡 | — |
 | 13 | Security & Trust | 🟡 | Feature-level language only — see Resolved decisions |
@@ -62,15 +63,17 @@ on these two points are superseded.
 
 ## Numbering note
 
-Milestones 04–06 have been fully renumbered and rebuilt in this pass (Connected Journey,
-Care Team, Patient Experience), each superseding same-topic content from the earlier
-five-section batch. Two pieces of that batch have no new-numbered replacement yet and are
-carried over as-is until the new sequence reaches them:
+Milestones 04–07 have been fully renumbered and rebuilt in this pass (Connected Journey,
+Care Team, Patient Experience, Assessment Intelligence), each superseding same-topic
+content from the earlier five-section batch. What's left of that batch:
 
-- **Everything Connected** (hub diagram) — [old link](https://claude.ai/code/artifact/f04e052f-1078-4a1f-9a54-f377003a0eb5)
-- **Assessment Intelligence** and **Clinical Notes** — same old link. Milestone 07
-  (next) covers this exact ground with a fuller brief — expect these two to be superseded
-  the same way Clinical Journey/Care Team/Patient Experience just were.
+- **Everything Connected** (hub diagram) — [old link](https://claude.ai/code/artifact/f04e052f-1078-4a1f-9a54-f377003a0eb5) —
+  no new-numbered replacement yet, carried over as-is.
+- **Clinical Notes** — superseded by Milestone 07's dynamic note + @ variable demo, which
+  covers the same ground more fully (real interaction, not a looping animation).
+- Old milestones **11 (Appointments & Scheduling)** and **12 (Referral Journey)** are very
+  likely to be superseded by **Milestone 08 (Referrals, Scheduling & First Contact)**,
+  next up per your own roadmap — watch for that collision the same way 05-07 resolved it.
 
 ## Open items
 
