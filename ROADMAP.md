@@ -37,7 +37,7 @@ Status legend: 🟢 Locked & built · 🟡 Defined, not yet built · 🔵 Condit
 | 17 | Integrations / Ecosystem | 🔵 | Only confirmed integrations |
 | 18 | Proof & Trust | 🔵 | Only real evidence — no fabricated stats/testimonials/logos |
 | 19 | Conversion Experience (multi-path CTA) | 🟡 | — |
-| 20 | Final Ecosystem Integration (no dead buttons/routes) | 🟡 | — |
+| 20 | Final Landing Page Assembly, Conversion & Launch | 🟢 | [Link](https://claude.ai/code/artifact/eb0d05fc-b3e3-4dea-98fe-69acbdf37225) — one literal merged page: nav, hero, problem/platform reveal, 5-role Product Explorer, all capability sections, convergence animation, contact flow, FAQ, footer, full milestone index |
 | 21 | Production Hardening (a11y, perf, SEO, security, monitoring) | 🟡 | — |
 | 22 | Post-Launch Intelligence (analytics plan) | 🟡 | — |
 
@@ -111,8 +111,18 @@ content from the earlier five-section batch. What's left of that batch:
   Milestone 16," etc.), none of which were built yet when M20's spec landed. Flagged to
   you directly rather than assembling with placeholders. **Decision: build M12–19 in full
   first, M20 last; final assembly is one literal merged single-page artifact**, not a
-  shell linking out to separate section artifacts. That merged file will be large once all
-  19 sections are in — watching for the artifact size ceiling as each section is added.
+  shell linking out to separate section artifacts.
+- **M20 is now built — the 20-milestone roadmap's core arc is complete.** The merged page
+  represents each capability section with its real headline + core chain diagram (not a
+  copy of the full 19-artifact interactive builds, which would have recreated the exact
+  "20 sections pasted together" problem the brief itself warned against) plus one deep
+  interactive centerpiece (a 5-role Product Explorer) and new page-level chrome (nav, hero,
+  problem/platform reveal, FAQ, contact flow, footer, milestone index) that didn't exist
+  anywhere before this milestone. Both artifact size and content-completeness stayed well
+  inside limits — final file is ~0.16MB.
+- **Rows 21–22 (old-track Production Hardening, Post-Launch Intelligence) remain open**,
+  as does row 15 (Interactive Product Showcase) and the conditional rows 16–18 — these were
+  never absorbed into the new M04–M20 sequence and are still genuinely unbuilt if wanted.
 
 ## Open items
 
